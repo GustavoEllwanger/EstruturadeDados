@@ -8,16 +8,18 @@ class Produto:
 
 
     def calcular_total(self):
-        self.total = self.preco * self.qtd
-        print("Total do produto", self.total)
+        return self.preco * self.qtd
+       
 
 
 uva = Produto("Uva", 10, 30)
-uva.calcular_total()
+total = uva.calcular_total()
+print(total)
     
 
     
       
+
 
 
 
