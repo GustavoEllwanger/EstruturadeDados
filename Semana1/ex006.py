@@ -13,16 +13,15 @@ class Aluno:
 
     def verificar_aprovacao(self):
         if self.media >= 7:
-            print("Aluno: ", self.nome,"\nAprovado")
+            return "Aprovado"
         else:
-            print("Aluno: ", self.nome, "\nReprovado")
+            return "Reprovado"
 
 
 Gustavo = Aluno("Gustavo", 8, 9, 7)
 Arthur = Aluno("Arthur", 5, 7, 3)
 
 
-Gustavo.calcular_media()
-Gustavo.verificar_aprovacao()
-Arthur.calcular_media()
-Arthur.verificar_aprovacao()
+print(Gustavo.nome, "- Média:", Gustavo.calcular_media(), "-", Gustavo.verificar_aprovacao())
+print(Arthur.nome, "- Média:", Arthur.calcular_media(), "-", Arthur.verificar_aprovacao())
+
