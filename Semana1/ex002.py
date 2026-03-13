@@ -5,19 +5,6 @@ class Contato:
         self.email = email
 
 
-
-    def nomeadd(self):
-        print("Nome: ", self.nome)
-
-
-    def telefoneadd(self):
-        print("Telefone: ", self.telefone)
-
-
-    def emailadd(self):
-        print("Email: ", self.email )
-
-        
 agenda = []
 
 Gustavo = Contato("Gustavo", 555, "aaa@gmail.com")
@@ -32,6 +19,3 @@ for i in range (3):
     print(agenda[i].nome)
     print(agenda[i].telefone)
     print(agenda[i].email)
-
-
-
