@@ -22,7 +22,7 @@ Gustavo = Aluno("Gustavo", 8, 9, 7)
 Arthur = Aluno("Arthur", 5, 7, 3)
 
 
-#Gustavo.calcular_media()
+Gustavo.calcular_media()
 Gustavo.verificar_aprovacao()
-#Arthur.calcular_media()
+Arthur.calcular_media()
 Arthur.verificar_aprovacao()
