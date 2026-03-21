@@ -76,21 +76,6 @@ def mostrarSituacao(lista):
 
 
 
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 def menu():
     print("1 - Inserir aluno")
     print("2 - Listar alunos")
