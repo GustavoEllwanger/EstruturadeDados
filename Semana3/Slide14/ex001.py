@@ -105,7 +105,7 @@ def menu():
 def main():
     lista = None
     opc = 0
-    while opc != 6:
+    while opc != 5:
         opc = menu()
         if opc == 1:
             nome = input("Digite o nome do aluno a inserir: ")
