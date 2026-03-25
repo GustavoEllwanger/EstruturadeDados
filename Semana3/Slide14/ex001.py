@@ -52,6 +52,7 @@ def removerAluno(id, nome, lista):
                 return lista
         aux = aux.proximo
     print("Aluno não encontrado")
+    return
 
 
 
