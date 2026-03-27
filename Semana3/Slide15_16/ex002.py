@@ -154,14 +154,14 @@ def navigateMusic(lista):
             print("Última música!")
             return atual
         atual = atual.proximo
-        print("Música atual: ", lista.musicName)
+        print("Música atual: ", atual.musicName)
         return atual
     elif opc == 2:
         if atual.anterior == None:
             print("Primeira música!")
             return atual
         atual = atual.anterior
-        print("Música atual: ", lista.musicName)
+        print("Música atual: ", atual.musicName)
         return atual
 
         
@@ -187,6 +187,7 @@ def menu():
 
 
 def main():
+    atual = None
     lista = None
     opc = 0
 
@@ -198,16 +199,18 @@ def main():
             artist = input("Digite o artista: ")
             musicDuration = float(input("Digite o tempo da música: "))
             lista = addMusic(lista, musicID, musicName, artist, musicDuration)
+            if atual is None:
+                atual = lista
         elif opc == 2:
             listMusic(lista)
         elif opc == 3:
-            lista = removeMusic(lista, musicID, musicName)
+            lista = removeMusic(lista, 0, "")
         elif opc == 4:
-            searchMusic(lista, musicName, artist)
+            searchMusic(lista, "", "")
         elif opc == 5:
-            playlist_duration(lista, musicDuration)
+            playlist_duration(lista, 0)
         elif opc == 6:
-            lista = navigateMusic(lista)
+            atual = navigateMusic(atual)
         elif opc == 7:
             print("Saindo")
 main()
