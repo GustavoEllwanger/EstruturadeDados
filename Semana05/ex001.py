@@ -82,7 +82,7 @@ def main():
     qtd = int(input("Digite a quantidade de guerreiros: "))
 
     for i in range(1, qtd + 1):
-        lista = adicionarGuerreiro(lista, "Guerreiro " + str(i))
+        lista = adicionarGuerreiro(lista, f"Guerreiro {i}")
 
     simularJogo(lista)
 
